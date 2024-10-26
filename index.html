@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aayush Bajoria's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- Navigation Menu -->
+    <header>
+        <h1>Aayush Bajoria</h1>
+        <nav>
+            <a href="#" data-page="home" class="menu-link active">Home</a>
+            <a href="#" data-page="about" class="menu-link">About</a>
+            <a href="#" data-page="projects" class="menu-link">Projects</a>
+            <a href="#" data-page="contact" class="menu-link">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Content Sections -->
+    <main>
+        <section id="home" class="page-section active">
+            <h2>Welcome to My Portfolio</h2>
+            <p>Hi, I'm Aayush Bajoria, and this is a brief introduction about myself.</p>
+        </section>
+
+        <section id="about" class="page-section">
+            <h2>About Me</h2>
+            <p>I'm Aayush Bajoria. Write a detailed description of yourself, your background, and what you do.</p>
+        </section>
+
+        <section id="projects" class="page-section">
+            <h2>Projects</h2>
+            <div class="project-card">
+                <h3>Project 1</h3>
+                <p>Description of the project and your role in it.</p>
+            </div>
+            <div class="project-card">
+                <h3>Project 2</h3>
+                <p>Description of the project and its impact.</p>
+            </div>
+        </section>
+
+        <section id="contact" class="page-section">
+            <h2>Contact</h2>
+            <button id="contactBtn">Open Contact Form</button>
+            <!-- Modal for Contact Form -->
+            <div id="contactModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Contact Me</h2>
+                    <form>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" required></textarea>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Aayush Bajoria. All rights reserved.</p>
+    </footer>
+</body>
+</html>
