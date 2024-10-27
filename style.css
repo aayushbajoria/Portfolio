@@ -27,17 +27,22 @@ nav a.active {
 .page-section {
     display: none;
     padding: 20px;
-    text-align: center;
 }
 
 .page-section.active {
     display: block;
 }
 
+h1, h2 {
+    color: #333;
+}
+
 .project-card {
+    background-color: #fff;
     border: 1px solid #ddd;
     padding: 15px;
     margin: 10px 0;
+    border-radius: 5px;
 }
 
 footer {
@@ -45,6 +50,9 @@ footer {
     color: #fff;
     text-align: center;
     padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
 /* Modal Styling */
@@ -61,19 +69,31 @@ footer {
 
 .modal-content {
     background-color: #fff;
-    margin: 10% auto;
+    margin: 15% auto;
     padding: 20px;
     width: 80%;
-    max-width: 500px;
-    position: relative;
-    border-radius: 8px;
+    max-width: 400px;
+    border-radius: 5px;
 }
 
 .close {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 24px;
+    float: right;
+    font-size: 20px;
+    font-weight: bold;
     cursor: pointer;
-    color: #333;
+}
+
+/* Resume Link Styling */
+.resume-link {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.resume-link:hover {
+    background-color: #555;
 }

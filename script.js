@@ -21,21 +21,24 @@ menuLinks.forEach(link => {
     });
 });
 
-// JavaScript for Modal Contact Form
+// JavaScript for Contact Modal
 const contactBtn = document.getElementById('contactBtn');
-const modal = document.getElementById('contactModal');
-const closeModal = document.querySelector('.close');
+const contactModal = document.getElementById('contactModal');
+const closeBtn = document.querySelector('.close');
 
+// Open modal when button is clicked
 contactBtn.addEventListener('click', () => {
-    modal.style.display = 'block';
+    contactModal.style.display = 'block';
 });
 
-closeModal.addEventListener('click', () => {
-    modal.style.display = 'none';
+// Close modal when 'X' is clicked
+closeBtn.addEventListener('click', () => {
+    contactModal.style.display = 'none';
 });
 
+// Close modal when clicking outside of modal content
 window.addEventListener('click', (event) => {
-    if (event.target == modal) {
-        modal.style.display = 'none';
+    if (event.target == contactModal) {
+        contactModal.style.display = 'none';
     }
 });
